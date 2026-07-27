@@ -254,7 +254,7 @@ hr.scribble{
   <div style="margin-top:70px; display:flex; gap:26px;">
     <div class="sticky" style="background:var(--yellow); width:200px; transform:rotate(-3deg);">
       <div class="tab-title">Team</div>
-      <p style="margin:6px 0 0 0;">3 people<br>2nd sem. MAI</p>
+      <p style="margin:6px 0 0 0; font-size:16px;">Abin<br>Harshavardini<br>Anshu</p>
     </div>
     <div class="sticky" style="background:var(--pink); width:200px; transform:rotate(2deg);">
       <div class="tab-title">Supervisor</div>
@@ -390,28 +390,30 @@ hr.scribble{
     <text x="585" y="363" text-anchor="middle" font-family="PatrickHand" font-size="11" fill="#3a3a3a">cadence / rules / quiet hrs</text>
     <path d="M508,352 C495,352 495,352 482,352" stroke="#24486b" stroke-width="2" stroke-dasharray="4 4" fill="none" marker-end="url(#arrow2)"/>
 
-    <!-- branch to scheduler -->
-    <path d="M130,396 C130,430 260,430 340,455" stroke="#24486b" stroke-width="2.5" fill="none" marker-end="url(#arrow2)"/>
-    <!-- branch to urgent -->
-    <path d="M130,396 C130,470 260,520 320,530" stroke="#c23b3b" stroke-width="2.5" fill="none" marker-end="url(#arrow2)"/>
+    <!-- branch left: urgent path -->
+    <path d="M110,396 C90,415 60,425 40,440" stroke="#c23b3b" stroke-width="2.5" fill="none" marker-end="url(#arrow2)"/>
+    <!-- branch right: digest path -->
+    <path d="M150,396 C220,420 300,430 350,440" stroke="#24486b" stroke-width="2.5" fill="none" marker-end="url(#arrow2)"/>
 
-    <!-- scheduler / digest -->
-    <rect x="340" y="440" width="260" height="70" rx="14" fill="#cfe7ff" stroke="#24486b" stroke-width="2.5"/>
-    <text x="470" y="468" text-anchor="middle" font-family="CaveatH" font-weight="700" font-size="19" fill="#1c3a52">Scheduler → Digest</text>
-    <text x="470" y="488" text-anchor="middle" font-family="PatrickHand" font-size="12" fill="#3a3a3a">builds summary at chosen cadence</text>
+    <!-- LEFT COLUMN: urgent detector -->
+    <rect x="10" y="442" width="250" height="72" rx="14" fill="#ffd3e0" stroke="#c23b3b" stroke-width="3"/>
+    <text x="135" y="470" text-anchor="middle" font-family="CaveatH" font-weight="700" font-size="18" fill="#c23b3b">Urgent? → Bot API</text>
+    <text x="135" y="490" text-anchor="middle" font-family="PatrickHand" font-size="12" fill="#3a3a3a">Telegram Bot / Twilio WhatsApp</text>
 
-    <path d="M470,510 L470,540" stroke="#24486b" stroke-width="2.5" marker-end="url(#arrow2)"/>
-    <rect x="340" y="542" width="260" height="55" rx="12" fill="#d8f2d0" stroke="#24486b" stroke-width="2.5"/>
-    <text x="470" y="574" text-anchor="middle" font-family="CaveatH" font-weight="700" font-size="17" fill="#1c3a52">Email / Telegram digest to user</text>
+    <path d="M135,514 L135,542" stroke="#c23b3b" stroke-width="2.5" marker-end="url(#arrow2)"/>
+    <rect x="10" y="544" width="250" height="60" rx="12" fill="#ffe7ee" stroke="#c23b3b" stroke-width="2.5"/>
+    <text x="135" y="570" text-anchor="middle" font-family="CaveatH" font-weight="700" font-size="17" fill="#c23b3b">📱 instant ping</text>
+    <text x="135" y="588" text-anchor="middle" font-family="PatrickHand" font-size="12" fill="#3a3a3a">straight to user's phone</text>
 
-    <!-- urgent detector -->
-    <rect x="200" y="512" width="230" height="60" rx="14" fill="#ffd3e0" stroke="#c23b3b" stroke-width="3"/>
-    <text x="315" y="540" text-anchor="middle" font-family="CaveatH" font-weight="700" font-size="18" fill="#c23b3b">Urgent? → Bot API</text>
-    <text x="315" y="558" text-anchor="middle" font-family="PatrickHand" font-size="12" fill="#3a3a3a">Telegram Bot / Twilio WhatsApp</text>
+    <!-- RIGHT COLUMN: scheduler / digest -->
+    <rect x="350" y="442" width="260" height="72" rx="14" fill="#cfe7ff" stroke="#24486b" stroke-width="2.5"/>
+    <text x="480" y="470" text-anchor="middle" font-family="CaveatH" font-weight="700" font-size="19" fill="#1c3a52">Scheduler → Digest</text>
+    <text x="480" y="490" text-anchor="middle" font-family="PatrickHand" font-size="12" fill="#3a3a3a">builds summary at chosen cadence</text>
 
-    <path d="M270,572 C260,590 230,600 200,608" stroke="#c23b3b" stroke-width="2.5" fill="none" marker-end="url(#arrow2)"/>
-    <rect x="30" y="600" width="180" height="15" fill="none"/>
-    <text x="120" y="612" text-anchor="middle" font-family="CaveatH" font-weight="700" font-size="20" fill="#c23b3b">📱 instant ping!</text>
+    <path d="M480,514 L480,542" stroke="#24486b" stroke-width="2.5" marker-end="url(#arrow2)"/>
+    <rect x="350" y="544" width="260" height="60" rx="12" fill="#d8f2d0" stroke="#24486b" stroke-width="2.5"/>
+    <text x="480" y="570" text-anchor="middle" font-family="CaveatH" font-weight="700" font-size="17" fill="#1c3a52">Digest to user</text>
+    <text x="480" y="588" text-anchor="middle" font-family="PatrickHand" font-size="12" fill="#3a3a3a">by email / Telegram, on schedule</text>
   </svg>
 
   <div class="pagenum">3</div>
@@ -421,9 +423,10 @@ hr.scribble{
 <div class="page">
   <div class="tape" style="left:60px; top:-6px; transform:rotate(-2deg);"></div>
   <h2 class="section">Team of 3 — who owns what</h2>
-  <p>Three natural work-streams map cleanly onto the pipeline. Everyone should
-  still read/understand the whole system — but one person "owns" each track
-  and drives it at every milestone.</p>
+  <p>Team: <b>Abin, Harshavardini &amp; Anshu.</b> Three natural work-streams map
+  cleanly onto the pipeline below. Everyone should still read/understand the
+  whole system — but one person "owns" each track and drives it at every
+  milestone. <i>(Who takes A / B / C — we'll decide that together separately.)</i></p>
 
   <div style="display:flex; gap:20px; margin-top:22px;">
 
