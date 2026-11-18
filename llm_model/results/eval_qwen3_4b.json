@@ -1,0 +1,117 @@
+{
+  "model": "qwen3:4b",
+  "accuracy": 1.0,
+  "avg_seconds": 334.56265193223953,
+  "scores": {
+    "urgent": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 3
+    },
+    "action": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 3
+    },
+    "fyi": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 3
+    },
+    "noise": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 3
+    }
+  },
+  "rows": [
+    {
+      "id": 1,
+      "expected": "urgent",
+      "got": "urgent",
+      "reason": "Students are waiting at A1 with exam office unreachable.",
+      "seconds": 696.12
+    },
+    {
+      "id": 2,
+      "expected": "urgent",
+      "got": "urgent",
+      "reason": "Signature required by 15:00 today",
+      "seconds": 391.63
+    },
+    {
+      "id": 3,
+      "expected": "urgent",
+      "got": "urgent",
+      "reason": "Exam supervisor sick and needs replacement within next hour.",
+      "seconds": 365.97
+    },
+    {
+      "id": 4,
+      "expected": "action",
+      "got": "action",
+      "reason": "Comments requested by next Friday.",
+      "seconds": 381.03
+    },
+    {
+      "id": 5,
+      "expected": "action",
+      "got": "action",
+      "reason": "Student requests thesis meeting next week.",
+      "seconds": 306.27
+    },
+    {
+      "id": 6,
+      "expected": "action",
+      "got": "action",
+      "reason": "Upload missing receipt within two weeks.",
+      "seconds": 491.47
+    },
+    {
+      "id": 7,
+      "expected": "fyi",
+      "got": "fyi",
+      "reason": "Information about faculty meeting minutes with no action required.",
+      "seconds": 75.99
+    },
+    {
+      "id": 8,
+      "expected": "fyi",
+      "got": "fyi",
+      "reason": "Information about new e-books available in the catalogue.",
+      "seconds": 358.45
+    },
+    {
+      "id": 9,
+      "expected": "fyi",
+      "got": "fyi",
+      "reason": "Campus closure notice, no action required.",
+      "seconds": 288.94
+    },
+    {
+      "id": 10,
+      "expected": "noise",
+      "got": "noise",
+      "reason": "Advertisement for laptops discount.",
+      "seconds": 202.93
+    },
+    {
+      "id": 11,
+      "expected": "noise",
+      "got": "noise",
+      "reason": "Advertisement.",
+      "seconds": 243.66
+    },
+    {
+      "id": 12,
+      "expected": "noise",
+      "got": "noise",
+      "reason": "Advertisement.",
+      "seconds": 212.29
+    }
+  ]
+}

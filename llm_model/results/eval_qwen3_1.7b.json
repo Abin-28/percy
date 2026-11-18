@@ -1,0 +1,117 @@
+{
+  "model": "qwen3:1.7b",
+  "accuracy": 0.75,
+  "avg_seconds": 33.09049063920975,
+  "scores": {
+    "urgent": {
+      "precision": 0.5,
+      "recall": 0.6666666666666666,
+      "f1": 0.5714285714285715,
+      "support": 3
+    },
+    "action": {
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1": 0.8,
+      "support": 3
+    },
+    "fyi": {
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1": 0.8,
+      "support": 3
+    },
+    "noise": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 3
+    }
+  },
+  "rows": [
+    {
+      "id": 1,
+      "expected": "urgent",
+      "got": "unknown",
+      "reason": "Could not read the model's answer.",
+      "seconds": 146.3
+    },
+    {
+      "id": 2,
+      "expected": "urgent",
+      "got": "urgent",
+      "reason": "Deadline for signature is today at 15:00.",
+      "seconds": 33.17
+    },
+    {
+      "id": 3,
+      "expected": "urgent",
+      "got": "urgent",
+      "reason": "Supervisor is absent, needs to step in within the next hour.",
+      "seconds": 64.85
+    },
+    {
+      "id": 4,
+      "expected": "action",
+      "got": "action",
+      "reason": "Request for feedback by next Friday.",
+      "seconds": 16.08
+    },
+    {
+      "id": 5,
+      "expected": "action",
+      "got": "action",
+      "reason": "Request for thesis meeting scheduled next week.",
+      "seconds": 17.9
+    },
+    {
+      "id": 6,
+      "expected": "action",
+      "got": "urgent",
+      "reason": "Missing receipt needs to be uploaded within two weeks.",
+      "seconds": 17.38
+    },
+    {
+      "id": 7,
+      "expected": "fyi",
+      "got": "fyi",
+      "reason": "Information only",
+      "seconds": 16.39
+    },
+    {
+      "id": 8,
+      "expected": "fyi",
+      "got": "fyi",
+      "reason": "Information about new e-books added to the library catalogue.",
+      "seconds": 16.72
+    },
+    {
+      "id": 9,
+      "expected": "fyi",
+      "got": "urgent",
+      "reason": "Campus closed on 24 December",
+      "seconds": 18.34
+    },
+    {
+      "id": 10,
+      "expected": "noise",
+      "got": "noise",
+      "reason": "Advertisement.",
+      "seconds": 10.79
+    },
+    {
+      "id": 11,
+      "expected": "noise",
+      "got": "noise",
+      "reason": "Advertisement.",
+      "seconds": 29.08
+    },
+    {
+      "id": 12,
+      "expected": "noise",
+      "got": "noise",
+      "reason": "Advertisement.",
+      "seconds": 10.1
+    }
+  ]
+}

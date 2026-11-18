@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "sender": "student.m.keller@example.org",
+    "subject": "URGENT: exam room changed",
+    "body": "The exam starting at 13:00 has been moved to room B2 because of a water leak in A1. Students are waiting at A1 and nobody can reach the exam office. Please confirm ASAP.",
+    "label": "urgent"
+  },
+  {
+    "id": 2,
+    "sender": "dean.office@example.org",
+    "subject": "Need your signature by 15:00 today",
+    "body": "The accreditation report must be submitted to the ministry today at 16:00. We still need your signature on page 3. Please sign before 15:00 or the deadline is missed.",
+    "label": "urgent"
+  },
+  {
+    "id": 3,
+    "sender": "sekretariat@example.org",
+    "subject": "Prüfung heute: Aufsicht fehlt",
+    "body": "Die Aufsicht für die Klausur um 14 Uhr ist krank geworden. Können Sie bitte innerhalb der nächsten Stunde einspringen? Bitte sofort antworten.",
+    "label": "urgent"
+  },
+  {
+    "id": 4,
+    "sender": "colleague.a.meyer@example.org",
+    "subject": "Feedback on draft paper",
+    "body": "Could you read the attached draft and send me comments by next Friday? No rush before that.",
+    "label": "action"
+  },
+  {
+    "id": 5,
+    "sender": "student.r.singh@example.org",
+    "subject": "Thesis meeting next week",
+    "body": "Could we schedule a 30 minute meeting next week to discuss my thesis outline? Tuesday or Wednesday would work for me.",
+    "label": "action"
+  },
+  {
+    "id": 6,
+    "sender": "finance@example.org",
+    "subject": "Travel expense form missing a receipt",
+    "body": "Your conference travel expense form is missing a receipt. Please upload it within two weeks so we can refund you.",
+    "label": "action"
+  },
+  {
+    "id": 7,
+    "sender": "faculty@example.org",
+    "subject": "Faculty meeting minutes October",
+    "body": "Attached are the minutes of last week's faculty meeting. No action is required.",
+    "label": "fyi"
+  },
+  {
+    "id": 8,
+    "sender": "library@example.org",
+    "subject": "New e-books available",
+    "body": "The library added 120 new e-books on machine learning. You can find them in the catalogue.",
+    "label": "fyi"
+  },
+  {
+    "id": 9,
+    "sender": "hr@example.org",
+    "subject": "Campus closed on 24 December",
+    "body": "Please note that the campus is closed on 24 December. Normal operation resumes on 2 January.",
+    "label": "fyi"
+  },
+  {
+    "id": 10,
+    "sender": "deals@shopping-newsletter.example",
+    "subject": "50% off laptops this week only!",
+    "body": "Limited offer! Buy now and save 50% on all laptops. Click here to see the deals.",
+    "label": "noise"
+  },
+  {
+    "id": 11,
+    "sender": "events@vendor.example",
+    "subject": "Webinar: boost your productivity with our CRM",
+    "body": "Join our free webinar and learn how our CRM can double your sales. Register now!",
+    "label": "noise"
+  },
+  {
+    "id": 12,
+    "sender": "shop@uni-merch.example",
+    "subject": "New hoodies in the campus shop!",
+    "body": "Our new hoodie collection is here. Show your university pride, now with 10% student discount.",
+    "label": "noise"
+  }
+]
